@@ -1,0 +1,11 @@
+Okay, so, um, recording this for the Orbit app review. Let me share my screen, hold on. Okay. So the onboarding flow, right, I think it's mostly fine, but the second screen is, like, way too busy. Actually wait, let me go back. Yeah. We should probably cut the illustration, or maybe shrink it. Let's just cut it. Decision made, cut the illustration.
+
+Oh and the button color, Sam said last week the green was too bright. I think someone should try a darker green. Not sure who. Maybe Lena? Lena, if you have time. No rush, whenever.
+
+Totally unrelated, but did anyone book the room for the client workshop? I think that's on Tom. Tom, can you confirm the room by end of day tomorrow? Actually no, make it Wednesday, tomorrow is bad for me because I'm out.
+
+Anyway. Back to the app. The settings page. Honestly I haven't looked at it properly. Someone needs to review it for accessibility, especially contrast. I don't know who has time. We'll figure it out.
+
+And um, the client wants the demo before the end of the month, but I don't know the exact date, they said they'd tell us. So that's kind of a blocker for planning. Also the developer handoff, we're waiting on the API docs from the dev team, that's blocking the data screens.
+
+Okay I think that's everything. Oh wait, one more thing, priority wise the onboarding stuff is the most urgent, the rest can wait. Okay bye.
