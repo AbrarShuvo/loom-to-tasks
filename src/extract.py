@@ -46,7 +46,7 @@ def extract(transcript_text):
             last_error = error
         if attempt < MAX_ATTEMPTS:
             wait = 2 ** attempt
-            print(f"Attempt {attempt} failed. Retrying in {wait}s...", file=sys.stderr)
+            print(f"Attempt {attempt} failed ({type(last_error).__name__}: {str(last_error)[:150]}). Retrying in {wait}s...", file=sys.stderr)
             time.sleep(wait)
     raise last_error
 
