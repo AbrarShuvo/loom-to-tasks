@@ -17,6 +17,7 @@ Rules:
 6. Priority: use what the speaker says. If priority is not stated, write "unknown".
 7. Decisions are things the speaker says were decided. Blockers are things stopping progress.
 8. The summary must be two sentences at most.
+9. If the speaker commits to doing something themselves in the future (for example "I'll email them today"), record it as a task. If the speaker does not give their own name, write "speaker" as the owner and set owner_confirmed to true. Do not turn things the speaker already finished into tasks.
 """
 
 
