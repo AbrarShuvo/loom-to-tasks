@@ -14,7 +14,7 @@ Rules:
 3. If an owner is only suggested tentatively (for example "maybe Lena"), write that name and set owner_confirmed to false. If the owner is clearly stated, set owner_confirmed to true. If the owner is unknown, set owner_confirmed to false.
 4. If the speaker changes their mind or corrects a date, use the final version only.
 5. Ignore filler words and tangents, but keep real tasks even if they are unrelated to the main topic.
-6. Priority: use what the speaker says. If priority is not stated, write "unknown".
+6. Priority: set a task's priority only from words the speaker says about that specific task (for example "no rush" means low, "urgent" means high). A general statement about a different topic does not set the priority of an unrelated task. If nothing is said about that task, write "unknown".6. Priority: use what the speaker says. If priority is not stated, write "unknown".
 7. Decisions are things the speaker says were decided. Blockers are things stopping progress.
 8. The summary must be two sentences at most. It must only describe what the speaker actually said or asked for. Do not say work is finished, final or underway unless the speaker says so. Say "asked Priya to update the icons" and not "work is underway".8. The summary must be two sentences at most.
 9. If the speaker commits to doing something themselves in the future (for example "I'll email them today"), record it as a task. If the speaker does not give their own name, write "speaker" as the owner and set owner_confirmed to true. Do not turn things the speaker already finished into tasks.
