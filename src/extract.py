@@ -1,4 +1,5 @@
 import sys
+import time
 from pydantic import ValidationError
 
 from read_transcript import read_transcript
@@ -21,13 +22,33 @@ Rules:
 """
 
 
+RETRY_CODES = {429, 500, 503}
+MAX_ATTEMPTS = 3
+
+
 def extract(transcript_text):
-    raw = generate_structured(
-        contents=f"Transcript:\n\n{transcript_text}",
-        schema=Extraction,
-        system_instruction=SYSTEM_PROMPT,
-    )
-    return Extraction.model_validate_json(raw)
+    last_error = None
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            raw = generate_structured(
+                contents=f"Transcript:\n\n{transcript_text}",
+                schema=Extraction,
+                system_instruction=SYSTEM_PROMPT,
+            )
+            if not raw or not raw.strip():
+                raise ValueError("The model returned an empty reply.")
+            return Extraction.model_validate_json(raw)
+        except ValueError as error:
+            last_error = error
+        except Exception as error:
+            if getattr(error, "code", None) not in RETRY_CODES:
+                raise
+            last_error = error
+        if attempt < MAX_ATTEMPTS:
+            wait = 2 ** attempt
+            print(f"Attempt {attempt} failed. Retrying in {wait}s...", file=sys.stderr)
+            time.sleep(wait)
+    raise last_error
 
 
 def main():
@@ -36,12 +57,16 @@ def main():
         sys.exit(1)
     try:
         text = read_transcript(sys.argv[1])
-        result = extract(text)
     except (FileNotFoundError, ValueError) as error:
         print(f"Input error: {error}")
         sys.exit(1)
+    try:
+        result = extract(text)
     except ValidationError as error:
         print(f"The model returned output that does not match the schema:\n{error}")
+        sys.exit(1)
+    except ValueError as error:
+        print(f"Bad model reply: {error}")
         sys.exit(1)
     except Exception as error:
         print(f"Request failed: {type(error).__name__}: {error}")

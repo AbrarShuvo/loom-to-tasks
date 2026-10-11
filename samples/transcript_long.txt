@@ -1,0 +1,19 @@
+Okay, recording this for the Fernwood booking app review, it's Monday, give me a second. Alright. So first, the calendar screen. I finished that last week, so that's done, nothing to do there. Second, navigation. We went back and forth on this, and I think we should use the bottom tab bar instead of the hamburger menu, because on the test phones people just did not find the menu. So that's decided, bottom tab bar.
+
+Now, dark mode. I was going to say we ship it in this release. Actually no, let's push dark mode to the next release, we don't have time to test it properly. So dark mode is out for now.
+
+On to the emails. Maya, the booking confirmation email is still using the old template and the client keeps asking about it. This one is urgent. Can you redo it by Tuesday? Thanks.
+
+Jun, can you check the booking form on small phones? The fields get cut off on the smaller screens. Let's say Wednesday. Actually no, make it Friday, because Wednesday is a public holiday for you.
+
+Totally different topic, I had a really long coffee this morning, anyway. The onboarding copy still isn't written. Maybe Aisha could take it, but I'm not sure she has time, so don't count on it.
+
+Tom, whenever you get a chance, it would be nice to tidy up the icon library. It's a nice to have, there's no deadline on it.
+
+Something else. Someone needs to renew the Figma team plan. I don't know who handles billing, so I can't say who.
+
+For my part, I'll send the client the updated prototype link by Thursday.
+
+Now blockers. We're still waiting on the payment sandbox credentials from the client, so the payment screens can't be tested. And we haven't received the legal text for the terms page, so that page is stuck too.
+
+Okay, I think that's it. Oh, one more thing, the loading animation on the splash screen is a bit slow, but that's not urgent, let's look at it after launch. Alright, bye.
