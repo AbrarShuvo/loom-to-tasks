@@ -3,9 +3,9 @@ Decisions:
 
 Tasks:
 - Try a darker green for the button | owner: Lena (tentative, "maybe") | deadline: unknown | priority: low
-- Confirm the room for the client workshop | owner: Tom | deadline: Wednesday (corrected from "tomorrow") | priority: medium
-- Review the settings page for accessibility and contrast | owner: unknown | deadline: unknown
-
+- Confirm the room for the client workshop | owner: Tom | deadline: Wednesday (corrected from "tomorrow") | priority: unknown
+- Review the settings page for accessibility and contrast | owner: unknown | deadline: unknown | priority: unknown
+  
 Blockers:
 - Exact demo date not known yet (client will tell them)
 - Waiting on API docs from the dev team (blocks the data screens)

@@ -4,4 +4,5 @@
    Output: JSON with summary, decisions, tasks (title, owner, deadline, priority), blockers.
    Rule: if owner or deadline is not stated, write "unknown". Never guess.
    Out of scope for v1: audio/video, real-time use, integrations, user interface.
-   Done when: it handles my 3 sample transcripts and one designer says it saves time.
+   Done when: it handles my sample transcripts and one designer says it saves time.
+   Rule: when an owner is only tentative (for example "maybe Lena"), the tool names them but marks the owner as unconfirmed.
