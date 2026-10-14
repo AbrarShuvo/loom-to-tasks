@@ -15,3 +15,8 @@
    - 503 means the server is busy. extract.py retries up to 3 times.
    - gemini-2.5-flash was retired for new users. Pick a model from list_models.py and test it.
    - My current model: [the name from the Select-String command]
+
+# Timing (Day 7)
+- Manual: [X] min
+- Tool: about 6 s, plus [Y] min to review the output
+- Caveats: one person, one run, a transcript I wrote (about 330 words), so I already knew the answers and my manual time is probably too low.
