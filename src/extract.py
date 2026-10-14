@@ -1,5 +1,6 @@
 import sys
 import time
+from render import to_markdown
 from pydantic import ValidationError
 
 from read_transcript import read_transcript
@@ -52,11 +53,13 @@ def extract(transcript_text):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python src/extract.py <path to transcript>")
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    as_markdown = "--md" in sys.argv
+    if not args:
+        print("Usage: python src/extract.py <path to transcript> [--md]")
         sys.exit(1)
     try:
-        text = read_transcript(sys.argv[1])
+        text = read_transcript(args[0])
     except (FileNotFoundError, ValueError) as error:
         print(f"Input error: {error}")
         sys.exit(1)
@@ -71,7 +74,10 @@ def main():
     except Exception as error:
         print(f"Request failed: {type(error).__name__}: {error}")
         sys.exit(1)
-    print(result.model_dump_json(indent=2))
+    if as_markdown:
+        print(to_markdown(result))
+    else:
+        print(result.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":
