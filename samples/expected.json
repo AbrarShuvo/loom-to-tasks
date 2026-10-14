@@ -1,39 +1,48 @@
 {
-    "transcript_short.txt": {
-      "task_count": 3,
-      "tasks": [
-        {"keyword": "icons", "owner": "Priya", "deadline": "Thursday", "priority": "unknown"},
-        {"keyword": "headline", "owner": "Dan", "deadline": "Friday", "priority": "unknown"},
-        {"keyword": "logo", "owner": "speaker", "deadline": "today", "priority": "unknown"}
-      ],
-      "decisions": ["three-column"],
-      "blockers": ["logo"],
-      "forbidden_task_keywords": ["layout"]
-    },
-    "transcript_messy.txt": {
-      "task_count": 3,
-      "tasks": [
-        {"keyword": "green", "owner": "Lena", "owner_confirmed": false, "deadline": "unknown", "priority": "low"},
-        {"keyword": "room", "owner": "Tom", "owner_confirmed": true, "deadline": "Wednesday", "priority": "unknown"},
-        {"keyword": "accessib", "owner": "unknown", "owner_confirmed": false, "deadline": "unknown", "priority": "unknown"}
-      ],
-      "decisions": ["illustration"],
-      "blockers": ["demo", "API"],
-      "forbidden_task_keywords": []
-    },
-    "transcript_long.txt": {
-      "task_count": 7,
-      "tasks": [
-        {"keyword": "email", "owner": "Maya", "deadline": "Tuesday", "priority": "high"},
-        {"keyword": "booking form", "owner": "Jun", "deadline": "Friday", "priority": "unknown"},
-        {"keyword": "onboarding", "owner": "Aisha", "owner_confirmed": false, "deadline": "unknown", "priority": "unknown"},
-        {"keyword": "icon", "owner": "Tom", "deadline": "unknown", "priority": "low"},
-        {"keyword": "figma", "owner": "unknown", "deadline": "unknown", "priority": "unknown"},
-        {"keyword": "prototype", "owner": "speaker", "deadline": "Thursday", "priority": "unknown"},
-        {"keyword": "splash", "owner": "unknown", "deadline": "after launch", "priority": "low"}
-      ],
-      "decisions": ["tab bar", "dark mode"],
-      "blockers": ["payment", "legal"],
-      "forbidden_task_keywords": ["calendar"]
-    }
+  "transcript_short.txt": {
+    "task_count": 3,
+    "tasks": [
+      {"keyword": "icons", "owner": "Priya", "deadline": "Thursday", "priority": "unknown"},
+      {"keyword": "headline", "owner": "Dan", "deadline": "Friday", "priority": "unknown"},
+      {"keyword": "logo", "owner": "speaker", "deadline": "today", "priority": "unknown"}
+    ],
+    "decisions": ["three-column"],
+    "blockers": ["logo"],
+    "forbidden_task_keywords": ["layout"]
+  },
+  "transcript_messy.txt": {
+    "task_count": 3,
+    "tasks": [
+      {"keyword": "green", "owner": "Lena", "owner_confirmed": false, "deadline": "unknown", "priority": "low"},
+      {"keyword": "room", "owner": "Tom", "owner_confirmed": true, "deadline": "Wednesday", "priority": "unknown"},
+      {"keyword": "accessib", "owner": "unknown", "owner_confirmed": false, "deadline": "unknown", "priority": "unknown"}
+    ],
+    "decisions": ["illustration"],
+    "blockers": ["demo", "API"],
+    "forbidden_task_keywords": []
+  },
+  "transcript_long.txt": {
+    "task_count": 7,
+    "tasks": [
+      {"keyword": "email", "owner": "Maya", "deadline": "Tuesday", "priority": "high"},
+      {"keyword": "booking form", "owner": "Jun", "deadline": "Friday", "priority": "unknown"},
+      {"keyword": "onboarding", "owner": "Aisha", "owner_confirmed": false, "deadline": "unknown", "priority": "unknown"},
+      {"keyword": "icon", "owner": "Tom", "deadline": "unknown", "priority": "low"},
+      {"keyword": "figma", "owner": "unknown", "deadline": "unknown", "priority": "unknown"},
+      {"keyword": "prototype", "owner": "speaker", "deadline": "Thursday", "priority": "unknown"},
+      {"keyword": "splash", "owner": "unknown", "deadline": "after launch", "priority": "low"}
+    ],
+    "decisions": ["tab bar", "dark mode"],
+    "blockers": ["payment", "legal"],
+    "forbidden_task_keywords": ["calendar"]
+  },
+  "transcript_written1.txt": {
+    "tasks": [
+      {"keyword": "endpoint", "owner": "Marcus", "deadline": "Thursday morning", "priority": "unknown"},
+      {"keyword": "staging", "owner": "unknown", "priority": "unknown"}
+    ],
+    "decisions": ["notification"],
+    "blockers": ["auth"],
+    "forbidden_task_keywords": ["sci-fi", "series"]
   }
+}
