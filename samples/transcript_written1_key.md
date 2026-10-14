@@ -6,6 +6,7 @@ Tasks:
 - Clean up the shared staging environment | owner: unknown | deadline: before the end of the week | priority: unknown
 
 Blockers:
+- Waiting on the security team to finish clearing the OAuth credentials
 - Waiting on Sarah for the updated auth documentation
 
 Not tasks: the sci-fi series tangent. "Reconvene Thursday" is a meeting, so I'm not counting it (judgment call).

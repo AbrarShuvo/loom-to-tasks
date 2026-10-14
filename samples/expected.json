@@ -42,7 +42,7 @@
       {"keyword": "staging", "owner": "unknown", "priority": "unknown"}
     ],
     "decisions": ["notification"],
-    "blockers": ["auth"],
+    "blockers": ["OAuth", "documentation"],
     "forbidden_task_keywords": ["sci-fi", "series"]
   }
 }
